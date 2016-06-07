@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "Beer money";
+    src: local("Beer money"),
+    	 url("fonts/beermoney/beermoney.woff") format("woff"),
+    	 url("fonts/beermoney/beermoney.woff2") format("woff2"),
+         url("fonts/beermoney/beermoney.tff") format("truetype");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Beer money";
+    font-size: 14px;
+    background: #E0E8DD;
+}
+
+h1 {
+	font-size: 100px;
+	font-weight: normal;
+	color: #9A5A9C;
+	text-align: center;
+	line-height: 0.5;
+}
+
+.container {
+	background: #ffffff;
+	width: 700px;
+	margin: 0 auto;
+	border: 1px solid #777E7D;
+}
+
+.list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+}
+
+li {
+	border-bottom: 1px solid #777E7D;
+	padding: 15px 5px;
+}
+
+.entry {
+	border: none;
+	width: 100%;
+	font-size: 25px;
+	padding: 15px 5px;
+}
+
+li:first-child {
+	padding: 0;
+}
+
+input:focus {
+	outline: none;
+}
+
+input[type="text"] {
+	box-sizing: border-box;
+    font-family: "Beer money";
+}
+
+li:last-child {
+	border-bottom: none;
+	font-size: 14px;
+}
+
+.complete {
+	color: green;
+}
+
+.active {
+	color: red;
+}
+
+input[type="submit"] {
+	background: none;
+	border: none;
+    font-family: "Beer money";
+}
