@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "Beer money";
+    src: local("Beer money"),
+    	 url("fonts/beermoney/beermoney.woff") format("woff"),
+    	 url("fonts/beermoney/beermoney.woff2") format("woff2"),
+         url("fonts/beermoney/beermoney.tff") format("truetype");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Beer money";
+    font-size: 20px;
+    background: #E0E8DD;
+}
+
+h1 {
+	font-size: 100px;
+	font-weight: normal;
+	color: #9A5A9C;
+	text-align: center;
+	line-height: 0.5;
+}
+
+.container {
+	background: #ffffff;
+	width: 700px;
+	margin: 0 auto;
+	border: 1px solid #777E7D;
+	padding-bottom: 10px;
+}
+
+input[type="text"], #t1, #t2, #t3, #t4, span {
+	margin-left: 10px;
+}
+
+input[type="radio"] {
+	/*position: absolute;*/
+	display: none;
+}
+
+input[type="radio"] + label {
+	display: inline-block;
+	margin-right: 15px;
+	position: relative;
+	left: 520px;
+	top: 260px;
+}
+
+input[type="radio"]:checked + label {
+	color: #9A5A9C;
+}
+
+input:nth-of-type(1):checked ~ input[type="checkbox"] + label {
+	color: red;
+}
+
+input:nth-of-type(1):checked ~ input[type="checkbox"]:checked + label {
+	color: green;
+}
+
+input:nth-of-type(2):checked ~ input[type="checkbox"] + label {
+	color: red;
+}
+
+input:nth-of-type(2):checked ~ input[type="checkbox"]:checked + label {
+	color: #DFE3E1;
+	text-decoration: line-through;
+}
+
+input:nth-of-type(3):checked ~ input[type="checkbox"] + label {
+	color: #DFE3E1;
+	text-decoration: line-through;
+}
+
+input:nth-of-type(3):checked ~ input[type="checkbox"]:checked + label {
+	color: green;
+	text-decoration: none;
+}
+
+input[type="text"] {
+	outline: none;
+	width: 97%;
+	border: none;
+	font-family: "Beer money";
+	font-size: 20px;
+}
+
+/*input[type="radio"] + label {
+	display: inline-block;
+	position: absolute;
+}
+
+input:nth-of-type(1) + label {
+	top: 450px;
+	left: 800px;
+}
+
+input:nth-of-type(2) + label {
+	top: 450px;
+	left: 850px;
+}
+
+input:nth-of-type(3) + label {
+	top: 450px;
+	left: 925px;*/
+}
