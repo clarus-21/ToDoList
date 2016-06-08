@@ -27,55 +27,68 @@ h1 {
 	width: 700px;
 	margin: 0 auto;
 	border: 1px solid #777E7D;
-}
-
-.list {
-	list-style: none;
-	margin: 0;
-	padding: 0;
 	font-size: 20px;
-}
-
-li {
-	border-bottom: 1px solid #777E7D;
-	padding: 15px 5px;
-}
-
-.entry {
-	border: none;
-	width: 100%;
-	font-size: 25px;
-	padding: 15px 5px;
-}
-
-li:first-child {
-	padding: 0;
-}
-
-input:focus {
-	outline: none;
+	padding-bottom: 10px;
 }
 
 input[type="text"] {
-	box-sizing: border-box;
-    font-family: "Beer money";
+   font-family: "Beer money";
+   font-size: 20px;
+   border: none;
+   width: 100%;
+   padding: 0 10px;
+   box-sizing: border-box;
+   outline: none;
 }
 
-li:last-child {
-	border-bottom: none;
-	font-size: 14px;
+input:nth-of-type(n+5),
+span {
+	margin-left: 10px;
 }
 
-.complete {
-	color: green;
+input[type="radio"] {
+	display: none;
 }
 
-.active {
+input[type="radio"] + label {
+	display: inline-block;
+	position: relative;
+	padding: 5px;
+	top: 265px;
+	left: 520px;
+}
+
+input[type="radio"] + label:hover {
+	color: #D5C40D;
+}
+
+input[type="radio"]:checked + label {
+	color: #AEA21C;
+}
+
+input:nth-of-type(1):checked ~ input[type="checkbox"] + label {
 	color: red;
 }
 
-input[type="submit"] {
-	background: none;
-	border: none;
-    font-family: "Beer money";
+input:nth-of-type(1):checked ~ input[type="checkbox"]:checked + label {
+	color: green;
+}
+
+input:nth-of-type(2):checked ~ input[type="checkbox"] + label {
+	color: red;
+}
+
+input:nth-of-type(2):checked ~ input[type="checkbox"]:checked + label {
+	color: #A49C9C;
+	text-decoration: line-through;
+}
+
+input:nth-of-type(3):checked ~ input[type="checkbox"] + label {
+	color: #A49C9C;
+	text-decoration: line-through;
+}
+
+input:nth-of-type(3):checked ~ input[type="checkbox"]:checked + label {
+	color: green;
+	text-decoration: none;
 }
