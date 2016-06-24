@@ -31,6 +31,12 @@ section {
 	position: relative;
 }
 
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
 input[type="text"] {
 	width: 100%;
 	box-sizing: border-box;
@@ -42,55 +48,59 @@ input[type="text"] {
 	outline: none;
 }
 
-section > input[type="checkbox"] {
-	margin: 0 5px;
-}
-
-section > div {
-	position: absolute;
-	width: 100%;
-}
-
-section > span:not(:last-of-type) {
+input[type="checkbox"] {
 	display: none;
 }
 
-section > span:last-of-type {
-	position: relative;
-	top: 240px;
+span {
+	position: absolute;
+	top: 250px;
 	left: 5px;
 }
 
-section > div > *:first-child {
-	position: absolute;
-	top: 215px;
-}
-
-section > div > *:first-child > a {
-	text-decoration: none;
-	color: black;
-	font-weight: normal;
-	display: block;
-}
-
-section > div:nth-of-type(1) > *:first-child {
-	left: 400px;
-}
-
-section > div:nth-of-type(2) > *:first-child {
-	left: 440px;
-}
-
-section > div:nth-of-type(3) > *:first-child {
-	left: 535px;
-}
-
-section > div > form {
+input[type="radio"] {
 	display: none;
 }
 
-section > div:nth-of-type(1) > form:target,
-section > div:nth-of-type(2) > form:target,
-section > div:nth-of-type(3) > form:target {
+section > label {
+	position: absolute;
+	top: 250px;
+	cursor: pointer;
+}
+
+section > label:nth-of-type(1) {
+	left: 400px;
+}
+
+section > label:nth-of-type(2) {
+	left: 440px;
+}
+
+section > label:nth-of-type(3) {
+	left: 525px;
+}
+
+ul {
+	display: none;
+}
+
+input:checked + ul {
 	display: block;
+}
+
+li > label:before {
+	content: "";
+	display: inline-block;
+	width: 15px; height: 15px;
+	border-radius: 7px;
+	background: #E60A24;
+	margin: 0 5px;
+}
+
+li > label {
+	cursor: pointer;
+}
+
+li > input:checked + label:before {
+	background: #0DDE0D;
 }
